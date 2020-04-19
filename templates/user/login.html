@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>用户登录</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- //for-mobile-apps -->
+    <!-- <link href="../../static/css/userLogin.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/userLogin.css') }}">
+
+</head>
+<style type="text/css">
+    body{
+        background:url("{{ url_for('static',filename='image/loginBackground.jpg')}}") 0px 0px;
+    }
+</style>
+<body>
+    <!-- main -->
+    <div class="main">
+        <h1>
+            登录
+        </h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            {{ form.csrf_token() }}
+            {{ form.username }}
+            {{ form.password }}
+            {{ form.submit }}
+        </form>
+    </div>
+    <div class="footer">
+        <p>
+        </p>
+    </div>
+    <!-- //main -->
+</body>
+</html>

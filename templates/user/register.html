@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>注册</title>
+        <!-- viewport是为了让网页对移动设备友好 -->
+        <!-- inital-scale确保网页加载时,不会有任何的缩放 -->
+        <!-- devic-width确保能正确的显示在不同的设备上 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <!-- 引入 Bootstrap -->
+        <link href="" rel="stylesheet">
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link href="../../static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!--  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"> -->
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="../../static/bootstrap/js/jquery.min.js"></script>
+        <!--<script src="{{ url_for('static', filename='bootstrap/js/jquery.min.js') }}"></script> -->
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="../../static/bootstrap/js/bootstrap.min.js"></script>
+        <!--<script src=" {{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }} "></script> -->
+        <style>
+            div{
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="container col-md-12">注册</h1>
+        <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+        <script src=""></script>
+        <!-- 包括所有已编译的插件 -->
+        <script src=""></script>
+
+
+        <div class="container col-sm-12">
+            <div class="container col-sm-1">
+                    ss
+            </div>
+            <div class="container col-sm-1">
+                ss
+            </div>
+        </div>
+        <div class="container-fluid">ddddddd</div>
+
+        <!-- <form action="" method="post" enctype="multipart/form-data">
+        {{ form.csrf_token() }}
+        {{ form.username.label }}：{{ form.username }} <br>
+        {{ form.password.label }}：{{ form.password }} <br>
+        {{ form.passwordConfirm.label }}：{{ form.passwordConfirm }} <br>
+        {{ form.phone.label }}：{{ form.phone }} <br>
+        {{ form.submit }} <br>
+        {% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+        {% endfor %}
+        </form> -->
+    </body>
+</html>
